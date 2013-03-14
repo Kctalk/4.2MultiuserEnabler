@@ -21,10 +21,12 @@ public class UserActivity extends Activity {
     public void feature(View v) throws IOException {
     	Process p = Runtime.getRuntime().exec("su");
         DataOutputStream os = new DataOutputStream(p.getOutputStream());            
-        os.writeBytes("setprop fw.max_users 4\n");  
+        os.writeBytes("setprop fw.max_users 7\n");  
         os.flush();
 }
 
+    
+    
     public void um(View v) {
         String url = "https://play.google.com/store/apps/details?id=com.appaholics.um";
         Intent i = new Intent(Intent.ACTION_VIEW);
