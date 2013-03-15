@@ -18,24 +18,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <Button
-                android:id="@+id/feature"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:onClick="feature"
-                android:text="Enable the Feature" />
-
-            <Button
-                android:id="@+id/um"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:onClick="um"
-                android:text="Raghav Sood&apos;s User Management app" />
-
             <TextView
-                android:id="@+id/textView1"
+                android:id="@+id/TextView01"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
@@ -51,20 +35,38 @@
                 android:hint="&quot;Multi-user feature is not ready for deployment. Bad things will happen if you use it in its current state!&quot;"
                 android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="Thanks to: XDA Recognized Themer zanderman112 and XDA Senior Member mildlydisturbed! " />
-
             <Button
-                android:id="@+id/post"
+                android:id="@+id/feature"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
-                android:onClick="post"
-                android:text="Original Post" />
+                android:onClick="feature"
+                android:text="Enable the Feature" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="Third Party Tools for Multiple User Features"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/um"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="um"
+                android:text="Raghav Sood&apos;s User Management app" />
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:onClick="muappshare"
+                android:text="Multi-User App Share" />
 
         </LinearLayout>
 

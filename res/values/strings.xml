@@ -2,7 +2,12 @@
 <resources>
 
     <string name="app_name">4.2 Multiple User Enabler</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="about_title">About 4.2 Multiple User Enabler</string>
+	<string name="about_text">We have heard a lot about Google\'s multiple user feature, and we were so excited about it in 4.2. But we felt disappointed when Google limited the use of the future to Tablets. So here is my app! \nYou\'ll be able top enable the feature on any 4.2 mobile running Aosp, cm10.1 or Aokp! \nDisclaimer: Please use the app in your own risk! No thermonuclear war supported! Remember the feature it\'s not officially supported by Google for phones (I dunno why) so I\'ll help you with any problem but don\'t expect miracles. Also I\'ll continue understanding how the feature changes between tablets and phones to give an excellent work. Also I refer to Third Party App called User management, please for bugs refer to the creator.</string>
+    <string name="button_xda">4.2 Multiple User Enabler at XDA</string>
+    <string name="button_github">Open Source at Github!</string>
+    <string name="button_paypal">Donate to me!</string>
+    <string name="about_donations">PayPal donations do not grant any updates or improvements, they just support the work of the developer. App will remain free without donating.</string>
+    
+    
 </resources>

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class UserActivity extends Activity {
@@ -34,18 +35,35 @@ public class UserActivity extends Activity {
         startActivity(i);
     }
     
-    public void post(View v) {
-        String url = "http://forum.xda-developers.com/showthread.php?t=1807751";
+    public void muappshare(View v) {
+        String url = "https://play.google.com/store/apps/details?id=com.fivehellions.android.muappshare";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
     }
     
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.user, menu);
-        return true;
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.menu, menu);
+		return true;
+	}
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+           case R.id.exit:
+                finish();
+                return true;
+                
+           case R.id.about:
+   			Intent intent = new Intent(this, AboutActivity.class);
+   	        this.startActivity(intent);
+   	        break;
+   			
+   		}
+        
+        return false;
     }
     
 }
