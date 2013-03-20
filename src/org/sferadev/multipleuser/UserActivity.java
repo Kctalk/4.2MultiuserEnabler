@@ -22,11 +22,19 @@ public class UserActivity extends Activity {
     public void feature(View v) throws IOException {
     	Process p = Runtime.getRuntime().exec("su");
         DataOutputStream os = new DataOutputStream(p.getOutputStream());            
-        os.writeBytes("setprop fw.max_users 7\n");  
+        os.writeBytes(getExecStr());  
         os.flush();
 }
-
-    
+																																																																																																																																																																	
+    private String getExecStr(){
+    	StringBuffer sb = new StringBuffer();
+    	sb.append("setprop fw.max_users 7\n");
+    	sb.append("mkdir -p /data/local/userinit.d\n");
+    	sb.append("echo \"#!/system/bin/sh\" > /data/local/userinit.d/90multipleuser\n");
+    	sb.append("echo \"setprop fw.max_user 7\" >> /data/local/userinit.d/90multipleuser\n");
+    	sb.append("busybox chmod +x /data/local/userinit.d/90multipleuser\n");
+    	return sb.toString();
+    }
     
     public void um(View v) {
         String url = "https://play.google.com/store/apps/details?id=com.appaholics.um";
