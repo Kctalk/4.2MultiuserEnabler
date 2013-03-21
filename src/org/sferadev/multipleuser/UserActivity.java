@@ -31,7 +31,7 @@ public class UserActivity extends Activity {
     	sb.append("setprop fw.max_users 7\n");
     	sb.append("mkdir -p /data/local/userinit.d\n");
     	sb.append("echo \"#!/system/bin/sh\" > /data/local/userinit.d/90multipleuser\n");
-    	sb.append("echo \"setprop fw.max_user 7\" >> /data/local/userinit.d/90multipleuser\n");
+    	sb.append("echo \"setprop fw.max_users 7\" >> /data/local/userinit.d/90multipleuser\n");
     	sb.append("busybox chmod +x /data/local/userinit.d/90multipleuser\n");
     	return sb.toString();
     }
